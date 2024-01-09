@@ -1,0 +1,55 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#tooltip {
+    opacity: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    pointer-events: none;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    z-index: 9999;
+}
+
+#title {
+    text-anchor: middle;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#x-axis,
+#y-axis {
+    font-size: 12px;
+}
+
+.bar {
+    fill: steelblue;
+}
+
+.bar:hover {
+    fill: dodgerblue;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 12px;
+    color: #ccc;
+}
